@@ -4,10 +4,11 @@
 # from random import randintnum = randint(LOWER_LIMIT, UPPER_LIMIT)
 
 from random import randint
+COUNT = 11
 randnum = randint(0, 1000)
 count = 1
-while count <= 11:
-    a = int (input("введите ваше число"))
+while True:
+    a = int(input("введите ваше число"))
     if a == randnum:
         print(f"Вы победили c {count} попытки")
         break
@@ -18,6 +19,6 @@ while count <= 11:
         if a < randnum:
             print("Больше")
             count += 1
-        if count == 11 and a!= randnum:
+        if count == COUNT and a != randnum:
             print("Вы проиграли!")
             break

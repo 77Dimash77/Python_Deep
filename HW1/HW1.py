@@ -14,7 +14,7 @@ if a + b > c and a + c > b and b + c > a:
     if (a == b and a != c) or (a == c and a != b) or (b == c and b != a):
         print("Равнобедренный треугольник")
     elif a == b == c:
-        print("Равносторонний треугольник")
+        print("Разносторонний треугольник")
     elif a != b != c:
         print("Разносторонний треугольник")
 else:
