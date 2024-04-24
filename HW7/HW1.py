@@ -7,9 +7,8 @@
 # исходного имени файла. К ним прибавляется желаемое конечное имя, если оно передано. Далее счётчик файлов и расширение
 
 import os
-
 def batch_rename(desired_name, digit_count, original_extension, final_extension, name_range=None):
-    # Получаем список файлов в текущей директории
+
     files = [file for file in os.listdir() if file.endswith(original_extension)]
 
     counter = 1
@@ -30,3 +29,5 @@ def batch_rename(desired_name, digit_count, original_extension, final_extension,
         counter += 1
 
 batch_rename("newfile", 2, ".txt", "txt", name_range=(3, 6))
+
+
